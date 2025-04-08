@@ -1,0 +1,39 @@
+:: StoryTitle
+Rodrick Rules
+
+
+:: StoryData
+{
+  "ifid": "F0703393-0C09-4006-AEB2-FBB31DE1CE38",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Launch",
+  "zoom": 1
+}
+
+
+:: BlockOne {"position":"625,425","size":"100,100"}
+hi hello
+
+[[Launch|Launch]]
+
+
+
+:: Launch {"position":"625,300","size":"100,100"}
+(enchant:?page,(bg:white))Your Text Here
+
+The story starts!(text-colour:black)+(bg:white)[uhhh]
+
+(text-colour:blue)[Welcome to Rodrick Rules! An interactive story of the moments leading up to and during the infamous party scene in //Diary of a Wimpy Kid: Rodrick Rules//]
+
+(text-colour:black)[Press Next to continue to the first scene.]
+
+[[BlockOne|BlockOne]]
+
+
+<img src="/Users/nayonikabanerjee/Documents/Twine/Stories/rowley.gif">
+<img src="/Users/nayonikabanerjee/Documents/Twine/Stories/greg.jpg">
+
+
+:: Untitled Passage 1 {"position":"800,300","size":"100,100"}
+
