@@ -7,33 +7,126 @@ Rodrick Rules
   "ifid": "F0703393-0C09-4006-AEB2-FBB31DE1CE38",
   "format": "Harlowe",
   "format-version": "3.3.9",
-  "start": "Launch",
   "zoom": 1
 }
 
 
-:: BlockOne {"position":"625,425","size":"100,100"}
-hi hello
+:: DadEmphasizes {"position":"1000,300","size":"100,100"}
+(enchant:?page,(bg:white))
 
-[[Launch|Launch]]
+(text-colour:black)[Dad: DO NOT HAVE ANYONE OVER]
+
+[[Next|RodrickSmirks]]
 
 
-:: Launch {"position":"625,300","size":"100,100"}
-(enchant:?page,(bg:white))Your Text Here
+:: GiveRodrickAdviceQuestion {"position":"2400,300","size":"100,100"}
+(enchant:?page,(bg:white))
 
-The story starts!(text-colour:black)+(bg:white)[uhhh]
+(text-colour:black)[Greg is looking at his closet]
 
-(text-colour:blue)[Welcome to Rodrick Rules! An interactive story of the moments leading up to and during the infamous party scene in //Diary of a Wimpy Kid: Rodrick Rules//]
+[[Yes|YesGiveRodrickAdvice]]
+[[No|NoGiveRodrickAdvice]]
 
-(text-colour:black)[Press Next to continue to the first scene.]
 
-[[BlockOne|BlockOne]]
+:: GregLookingAtCloset {"position":"2000,300","size":"100,100"}
+(enchant:?page,(bg:white))
 
+(text-colour:black)[Greg is looking at his closet]
+
+[[Next|Lightbulb]]
+
+
+:: HelpRodrickSetUpQuestion {"position":"1600,300","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Are you going to help Rodrick or not?]
+
+[[Yes|YesRodrickSetUp]]
+[[No|NoRodrickSetUp]]
+
+
+
+
+:: Launch {"position":"600,300","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(set: $likeometer to 0) $likeometer
+
+(text-colour:black)[Welcome to Rodrick Rules! An interactive story of the moments leading up to and during the infamous party scene in //Diary of a Wimpy Kid: Rodrick Rules//]
+
+(text-colour:black)[Press //Next// to continue to the first scene! $likeometer]
+
+[[Next|ParentsLeave]]
 
 <img src="/Users/nayonikabanerjee/Documents/Twine/Stories/rowley.gif">
-<img src="/Users/nayonikabanerjee/Documents/Twine/Stories/greg.jpg">
 
 
-:: Untitled Passage 1 {"position":"800,300","size":"100,100"}
-testing testing
+:: Lightbulb {"position":"2200,300","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg is looking at his closet]
+
+[[Next|GiveRodrickAdviceQuestion]]
+
+
+:: NoGiveRodrickAdvice {"position":"2600,400","size":"100,100"}
+
+
+
+:: NoRodrickSetUp {"position":"1800,200","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(set: $likeometer to $likeometer -1)
+
+(text-colour:black)[RODRICK HATES YOU]
+
+[[Next|GregLookingAtCloset]]
+
+
+
+:: ParentsLeave {"position":"800,300","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(set: $likeometer to $likeometer +1)
+
+(text-colour:black)[Mom: The house better be intact when we come back! $likeometer]
+
+[[Next|DadEmphasizes]]
+
+
+:: RodrickSmirks {"position":"1200,300","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick: //smirks//]
+
+[[Next|RodrickTexts]]
+
+
+
+:: RodrickTexts {"position":"1400,300","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick texts all of his friends]
+
+[[Next|HelpRodrickSetUpQuestion]]
+
+
+
+:: YesGiveRodrickAdvice {"position":"2600,200","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg is looking at his closet]
+
+[[Next|YesGiveRodrickAdvice]]
+
+
+
+:: YesRodrickSetUp {"position":"1800,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(set: $likeometer to $likeometer +1)
+
+(text-colour:black)[//MINI GAME//]
+
+[[Next|GregLookingAtCloset]]
 
