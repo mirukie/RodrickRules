@@ -14,7 +14,7 @@ Rodrick Rules
 :: DadEmphasizes {"position":"1000,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Dad: DO NOT HAVE ANYONE OVER]
+(text-colour:black)[Dad: DO NOT HAVE ANYONE OVER $likeometer]
 
 [[Next|RodrickSmirks]]
 
@@ -22,10 +22,11 @@ Rodrick Rules
 :: GiveRodrickAdviceQuestion {"position":"2400,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Greg is looking at his closet]
+(text-colour:black)[Greg is looking at his closet $likeometer]
 
-[[Yes|YesGiveRodrickAdvice]]
-[[No|NoGiveRodrickAdvice]]
+(if: $likeometer is 1) [[yes|YesGiveRodrickAdvice]]
+
+(elseif: $likeometer is 0)  [no[[no|NoGiveRodrickAdvice]]]
 
 
 :: GregLookingAtCloset {"position":"2000,300","size":"100,100"}
@@ -117,7 +118,6 @@ Rodrick Rules
 
 (text-colour:black)[Greg is looking at his closet]
 
-[[Next|YesGiveRodrickAdvice]]
 
 
 
