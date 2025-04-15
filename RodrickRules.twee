@@ -19,14 +19,24 @@ Rodrick Rules
 [[Next|RodrickSmirks]]
 
 
-:: GiveRodrickAdviceQuestion {"position":"2400,300","size":"100,100"}
+:: FirstGuest {"position":"3200,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Greg is looking at his closet $likeometer]
+(text-colour:black)[//RING RING//]
 
-(if: $likeometer is 1) [[yes|YesGiveRodrickAdvice]]
+(text-colour:black)[The doorbell rings.]
 
-(elseif: $likeometer is 0)  [no[[no|NoGiveRodrickAdvice]]]
+[[Next|RodrickGoesSike]]
+
+
+:: GiveRodrickAdviceQuestion {"position":"2425,325","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Do you give Rodrick advice]
+
+[[Yes|YesGiveRodrickAdvice]]
+[[No|NoGiveRodrickAdvice]]
+
 
 
 :: GregLookingAtCloset {"position":"2000,300","size":"100,100"}
@@ -34,7 +44,7 @@ Rodrick Rules
 
 (text-colour:black)[Greg is looking at his closet]
 
-[[Next|Lightbulb]]
+[[Next|Idea]]
 
 
 :: HelpRodrickSetUpQuestion {"position":"1600,300","size":"100,100"}
@@ -48,12 +58,23 @@ Rodrick Rules
 
 
 
+:: Idea {"position":"2200,300","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg is looking at his closet]
+
+[[Next|GiveRodrickAdviceQuestion]]
+
+
+
 :: Launch {"position":"600,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (set: $likeometer to 0) $likeometer
 
 (text-colour:black)[Welcome to Rodrick Rules! An interactive story of the moments leading up to and during the infamous party scene in //Diary of a Wimpy Kid: Rodrick Rules//]
+
+(text-colour:black)[Your goal is to finish the story with a good relationship with Rodrick!]
 
 (text-colour:black)[Press //Next// to continue to the first scene! $likeometer]
 
@@ -62,16 +83,12 @@ Rodrick Rules
 <img src="/Users/nayonikabanerjee/Documents/Twine/Stories/rowley.gif">
 
 
-:: Lightbulb {"position":"2200,300","size":"100,100"}
+:: NoGiveRodrickAdvice {"position":"2650,550","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Greg is looking at his closet]
+(text-colour:black)[no]
 
-[[Next|GiveRodrickAdviceQuestion]]
-
-
-:: NoGiveRodrickAdvice {"position":"2600,400","size":"100,100"}
-
+[[Next|grabChairs]]
 
 
 :: NoRodrickSetUp {"position":"1800,200","size":"100,100"}
@@ -95,6 +112,88 @@ Rodrick Rules
 [[Next|DadEmphasizes]]
 
 
+:: RingPatty {"position":"5400,200","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[//ring ring//]
+
+(text-colour:black)[Patty: "Hello... Who's this?"]
+
+[[Next|RingPatty2]]
+
+
+:: RingPatty2 {"position":"5600,200","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: "Patty?? Ew."]
+
+[[Next|RingPatty3]]
+
+
+:: RingPatty3 {"position":"5800,200","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Patty: "IS THAT YOU GREG?? HOW DID YOU GET MY NUMBER. WHEN I SEE YO-"]
+
+(text-colour:black)[//hangs up//]
+
+[[Next|RingPatty4]]
+
+
+:: RingPatty4 {"position":"6000,200","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[That was for sure the wrong number. Try the other]
+
+[[908 - 202 - 569|RingRowley]]
+
+
+:: RingRowley {"position":"5400,0","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[//ring ring//]
+
+(text-colour:black)[Rowley: "Jefferson residence. Rowley speaking."]
+
+[[Next|RingRowley2]]
+
+
+:: RingRowley2 {"position":"5600,0","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: "Rowley, l need your help! Now!"]
+
+[[Next|RingRowley3]]
+
+
+:: RingRowley3 {"position":"5800,0","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rowley: "I'm on my way."]
+
+[[Next|shouldCallMom]]
+
+
+:: RodrickGoesSike {"position":"3400,300","size":"100,100"}
+(enchant:?page,(bg:black))
+
+(text-colour:white)[Rodrick: SIKE]
+
+(text-colour:white)[//Greg gets pushed into the basement.//]
+
+(text-colour:white)[Door is shut.]
+
+[[Next|pushedIntoBasement]]
+
+
+:: RodrickNoSwag {"position":"2725,125","size":"100,100"}
+enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick: Hey man I don't care about what you think]
+
+[[Next|grabChairs]]
+
+
 :: RodrickSmirks {"position":"1200,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
@@ -113,10 +212,21 @@ Rodrick Rules
 
 
 
+:: RodrickYesSwag {"position":"2725,325","size":"100,100"}
+enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick: You know what, you make a good point little bro]
+
+[[Next|grabChairs]]
+
+
 :: YesGiveRodrickAdvice {"position":"2600,200","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Greg is looking at his closet]
+(text-colour:black)[yes]
+
+(if: $likeometer is <1) [[Next|RodrickNoSwag]]
+(else:) [[Next|RodrickYesSwag]]
 
 
 
@@ -130,3 +240,156 @@ Rodrick Rules
 
 [[Next|GregLookingAtCloset]]
 
+
+
+:: callMom {"position":"5200,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg sees Rowley through the window]
+
+[[Next|rowleyWindow]]
+
+
+:: callRowley {"position":"5200,100","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[That's smart. He can help Greg get out of the basement. One small problem...]
+
+(text-colour:black)[Greg always has him on speed dial! He doesn't remember his number. He knows it's one of these though]
+
+[[908 - 202 - 569|RingRowley]]
+[[908 - 202 - 598|RingPatty]]
+
+
+:: grabChairs {"position":"3000,300","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg goes to grab chairs from the basement]
+
+[[Next|FirstGuest]]
+
+
+:: lightBulb {"position":"4400,300","size":"100,100"}
+(enchant:?page,(bg:black))
+
+(text-colour:white)[A lightbulb!! Turn it on]
+
+(text-style:"blur")[
+[[Turn on light|lightOn]]]
+
+
+:: lightOn {"position":"4600,300","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[That's better!]
+
+[[Next|seePhone]]
+
+
+:: pushedIntoBasement {"position":"3600,300","size":"100,100"}
+(enchant:?page,(bg:black))
+
+(text-colour:white)[It's too dark to see. Move around to find a lightbulb.]
+
+(text-style:"blur")[
+[[Right|wrongWayBeam]]
+[[Forward|rightWay]]
+[[Left|wrongWayChair]]]
+
+
+:: rightWay {"position":"3800,400","size":"100,100"}
+(enchant:?page,(bg:black))
+
+(text-colour:white)[Keep going.]
+
+(text-style:"blur")[
+[[Right|wrongWayBeam]]
+[[Forward|rightWay2]]
+[[Left|wrongWayChair]]]
+
+
+:: rightWay2 {"position":"4000,400","size":"100,100"}
+(enchant:?page,(bg:black))
+
+(text-colour:white)[Keep going. Greg sees a light.]
+
+(text-style:"blur")[
+[[Right|wrongWayTable]]
+[[Forward|wrongWayChair]]
+[[Left|rightWay3]]]
+
+
+:: rightWay3 {"position":"4200,400","size":"100,100"}
+(enchant:?page,(bg:black))
+
+(text-colour:white)[Almost thereeeeee]
+
+(text-style:"blur")[
+[[Right|wrongWayBeam]]
+[[Forward|wrongWayChair]]
+[[Left|lightBulb]]]
+
+
+:: rotaryPhone {"position":"5000,300","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Who should Greg call first?]
+
+[[Call Rowley|callRowley]]
+[[Call Mom|callMom]]
+
+
+:: rowleyWindow {"position":"6200,400","size":"100,100"}
+
+
+
+:: seePhone {"position":"4800,300","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Wait... Greg sees a phone.]
+
+[[Go towards the phone|rotaryPhone]]
+
+
+:: shouldCallMom {"position":"6000,0","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg decides to call his mom in the mean time.]
+
+[[Call Mom|callMom]]
+
+
+:: wrongWayBeam {"position":"3800,200","size":"100,100"}
+(enchant:?page,(bg:black))
+
+(text-colour:red)[''WRONG WAY'']
+
+(text-colour:white)[//OUCH//]
+
+(text-colour:white)[Greg hit his head on a beam.]
+
+[[Back|pushedIntoBasement]]
+
+
+:: wrongWayChair {"position":"4000,200","size":"100,100"}
+(enchant:?page,(bg:black))
+
+(text-colour:red)[''WRONG WAY'']
+
+(text-colour:white)[//OUCH//]
+
+(text-colour:white)[Greg hit his arm on a chair.]
+
+[[Back|pushedIntoBasement]]
+
+
+:: wrongWayTable {"position":"4200,200","size":"100,100"}
+(enchant:?page,(bg:black))
+
+(text-colour:red)[''WRONG WAY'']
+
+(text-colour:white)[//OUCH//]
+
+(text-colour:white)[Greg ran into his dad's civil war reenactment table. He's in big trouble if he hits it again.]
+
+[[Back|pushedIntoBasement]]
