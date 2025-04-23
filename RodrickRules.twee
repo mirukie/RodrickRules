@@ -47,6 +47,22 @@ Rodrick Rules
 [[Next|Idea]]
 
 
+:: GregSnitchesPt2 {"position":"5400,1000","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: It's a whole houseparty! AND he locked me in the basement so I couldn't do anything. But I'm glad I found this phone to call you Mom]
+
+[[Next|RodrickIsBusted]]
+
+
+:: GregStalls {"position":"5525,750","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: ...]
+
+[[Next|MomRainChecks]]
+
+
 :: HelpRodrickSetUpQuestion {"position":"1600,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
@@ -83,6 +99,39 @@ Rodrick Rules
 <img src="/Users/nayonikabanerjee/Documents/Twine/Stories/rowley.gif">
 
 
+:: MomFreaksOut {"position":"5400,875","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Mom: What?! You can't be serious! How many people does he have over?!]
+
+[[Next|GregSnitchesPt2]]
+
+
+:: MomHangsUp {"position":"5525,1000","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: Yeah okay Mom, sorry. Talk to you soon.]
+
+[[Next|phoneRowley]]
+
+
+
+:: MomPicksUp {"position":"5400,500","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Mom: Hey sweetie, what's the matter?]
+
+[[Next|RatRodrickOut]]
+
+
+:: MomRainChecks {"position":"5525,875","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Mom: Okay, well if you have nothing else to say, I'm going to get Manny ready for bed real quick. Can I call you back in a few minutes?]
+
+[[Yes|MomHangsUp]]
+
+
 :: NoGiveRodrickAdvice {"position":"2650,550","size":"100,100"}
 (enchant:?page,(bg:white))
 
@@ -110,6 +159,15 @@ Rodrick Rules
 (text-colour:black)[Mom: The house better be intact when we come back! $likeometer]
 
 [[Next|DadEmphasizes]]
+
+
+:: RatRodrickOut {"position":"5400,625","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: Oh, nothing much, it's just...]
+
+[[Tell on Rodrick|TellOnRodrick]]
+[[Say nothing|GregStalls]]
 
 
 :: RingPatty {"position":"5400,200","size":"100,100"}
@@ -171,7 +229,15 @@ Rodrick Rules
 
 (text-colour:black)[Rowley: "I'm on my way."]
 
-[[Next|shouldCallMom]]
+[[Next|RingRowley4]]
+
+
+
+:: RingRowley4 {"position":"6000,0","size":"100,100"}
+(if: $momCalled is true) [
+	(goto: "rowleyWindow")]
+(else:) [
+	(goto: "shouldCallMom")]
 
 
 :: RodrickGoesSike {"position":"3400,300","size":"100,100"}
@@ -184,6 +250,14 @@ Rodrick Rules
 (text-colour:white)[Door is shut.]
 
 [[Next|pushedIntoBasement]]
+
+
+:: RodrickIsBusted {"position":"5400,1125","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Mom: Don't worry Greg, we're on our way right now.]
+
+[[Next|YouLose]]
 
 
 :: RodrickNoSwag {"position":"2725,125","size":"100,100"}
@@ -220,6 +294,14 @@ enchant:?page,(bg:white))
 [[Next|grabChairs]]
 
 
+:: TellOnRodrick {"position":"5400,750","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: Actually, I needed to let you know that Rodrick has people over]
+
+[[Next|MomFreaksOut]]
+
+
 :: YesGiveRodrickAdvice {"position":"2600,200","size":"100,100"}
 (enchant:?page,(bg:white))
 
@@ -242,16 +324,28 @@ enchant:?page,(bg:white))
 
 
 
+:: YouLose {"position":"5400,1250","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[womp womp snitches get stitches. u suck for that!]
+
+[[Replay?|Launch]]
+
+
 :: callMom {"position":"5200,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Greg sees Rowley through the window]
+(set: $momCalled to true)
 
-[[Next|rowleyWindow]]
+(text-colour:black)[Guess the number minigame will go here]
+
+[[Next|MomPicksUp]]
 
 
 :: callRowley {"position":"5200,100","size":"100,100"}
 (enchant:?page,(bg:white))
+
+(set: $rowleyCalled to true)
 
 (text-colour:black)[That's smart. He can help Greg get out of the basement. One small problem...]
 
@@ -259,6 +353,14 @@ enchant:?page,(bg:white))
 
 [[908 - 202 - 569|RingRowley]]
 [[908 - 202 - 598|RingPatty]]
+
+
+:: callRowleyBuffer {"position":"5750,1050","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: I should call Rowley and tell him to get over here]
+
+[[Next|callRowley]] 
 
 
 :: grabChairs {"position":"3000,300","size":"100,100"}
@@ -284,6 +386,20 @@ enchant:?page,(bg:white))
 (text-colour:black)[That's better!]
 
 [[Next|seePhone]]
+
+
+:: phoneRowley {"position":"5525,1125","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: Man, I can't believe I blanked there. Oh well]
+
+(if: $rowleyCalled is true) [[Next|rowleyWindow]]
+(else:) [[Next|callRowley]]
+
+(if: $rowleyCalled is true) [
+	(goto: "rowleyWindow")]
+(else:) [
+	(goto: "callRowleyBuffer")]
 
 
 :: pushedIntoBasement {"position":"3600,300","size":"100,100"}
@@ -340,7 +456,11 @@ enchant:?page,(bg:white))
 
 
 :: rowleyWindow {"position":"6200,400","size":"100,100"}
+(enchant:?page,(bg:white))
 
+(text-colour:black)[Greg sees Rowley through the window]
+
+[[Next|rowleyWindow]]
 
 
 :: seePhone {"position":"4800,300","size":"100,100"}
@@ -351,10 +471,10 @@ enchant:?page,(bg:white))
 [[Go towards the phone|rotaryPhone]]
 
 
-:: shouldCallMom {"position":"6000,0","size":"100,100"}
+:: shouldCallMom {"position":"6200,0","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Greg decides to call his mom in the mean time.]
+(text-colour:black)[Greg decides to call his mom in the mean time. (call mom buffer)]
 
 [[Call Mom|callMom]]
 
@@ -366,7 +486,7 @@ enchant:?page,(bg:white))
 
 (text-colour:white)[//OUCH//]
 
-(text-colour:white)[Greg hit his head on a beam.]
+(text-colour:white)[Greg hit his head on a beam. Start again from the beginning.]
 
 [[Back|pushedIntoBasement]]
 
@@ -378,7 +498,7 @@ enchant:?page,(bg:white))
 
 (text-colour:white)[//OUCH//]
 
-(text-colour:white)[Greg hit his arm on a chair.]
+(text-colour:white)[Greg hit his arm on a chair. Start again from the beginning.]
 
 [[Back|pushedIntoBasement]]
 
@@ -390,6 +510,12 @@ enchant:?page,(bg:white))
 
 (text-colour:white)[//OUCH//]
 
-(text-colour:white)[Greg ran into his dad's civil war reenactment table. He's in big trouble if he hits it again.]
+(text-colour:white)[Greg ran into his dad's civil war reenactment table. He's in big trouble if he hits it again. Start  from the beginning.]
 
 [[Back|pushedIntoBasement]]
+
+
+:: StoryStylesheet [stylesheet]
+tw-passage {
+    font-family: Chalkduster;
+}
