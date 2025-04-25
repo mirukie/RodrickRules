@@ -11,12 +11,70 @@ Rodrick Rules
 }
 
 
+:: CongaLine {"position":"8825,375","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rowley screams: "CONGA LINEEE!!!"]
+
+[[Stop Him|NoConga]]
+[[Let Him Conga|EverybodyCongas]]
+
+
+:: ConversationWithMom {"position":"7050,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick: *nervously* haha hey Mom! What's up?]
+
+[[Next|MomAsksAboutGreg]]
+
+
 :: DadEmphasizes {"position":"1000,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Dad: DO NOT HAVE ANYONE OVER $likeometer]
+(text-colour:black)[Dad: DO NOT HAVE ANYONE OVER]
 
 [[Next|RodrickSmirks]]
+
+
+:: DoorOpens {"position":"6325,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rowley is in the doorway... but Rodrick is grabbing his arm]
+
+[[Next|RodrickIsAnEvilOlderBrother]]
+
+
+:: EscapeToTheParty {"position":"7450,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick pulls you guys up and out of the basement]
+
+[[Next|RodrickThreatening]]
+
+
+:: EverybodyCongas {"position":"8975,500","size":"100,100"}
+(enchant:?page,(bg:white))
+
+((set: $likeometer to $likeometer + 1)
+(text-colour:black)[Greg joins and Rodrick's crush does too. Rodrick is pleasantly surprised!]
+
+[[Next|GoodJob]]
+
+
+:: ExplorePartyOne {"position":"7700,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Thing 1 from the party to highlight (whipped cream)]
+
+[[Next|ExplorePartyTwo]]
+
+
+:: ExplorePartyTwo {"position":"7825,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Thing 2 from the party to highlight (seeing ppl idk)]
+
+[[Next|RodrickAndHisCrush]]
 
 
 :: FirstGuest {"position":"3200,300","size":"100,100"}
@@ -38,6 +96,9 @@ Rodrick Rules
 [[No|NoGiveRodrickAdvice]]
 
 
+:: GoodJob {"position":"9125,500","size":"100,100"}
+
+
 
 :: GregLookingAtCloset {"position":"2000,300","size":"100,100"}
 (enchant:?page,(bg:white))
@@ -45,6 +106,15 @@ Rodrick Rules
 (text-colour:black)[Greg is looking at his closet]
 
 [[Next|Idea]]
+
+
+:: GregPlaysItCool {"position":"8250,525","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(set: $likeometer to $likeometer + 1)
+(text-colour:black)[Greg: "-hosting super cool parties?? Ummm yeah, duh!"]
+
+[[Next|OnThinIce]]
 
 
 :: GregSnitchesPt2 {"position":"5400,1000","size":"100,100"}
@@ -72,8 +142,6 @@ Rodrick Rules
 [[No|NoRodrickSetUp]]
 
 
-
-
 :: Idea {"position":"2200,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
@@ -82,21 +150,36 @@ Rodrick Rules
 [[Next|GiveRodrickAdviceQuestion]]
 
 
-
 :: Launch {"position":"600,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(set: $likeometer to 0) $likeometer
+(set: $likeometer to 0) 
 
 (text-colour:black)[Welcome to Rodrick Rules! An interactive story of the moments leading up to and during the infamous party scene in //Diary of a Wimpy Kid: Rodrick Rules//]
 
 (text-colour:black)[Your goal is to finish the story with a good relationship with Rodrick!]
 
-(text-colour:black)[Press //Next// to continue to the first scene! $likeometer]
+(text-colour:black)[Press //Next// to continue to the first scene!]
 
 [[Next|ParentsLeave]]
 
 <img src="/Users/nayonikabanerjee/Documents/Twine/Stories/rowley.gif">
+
+
+:: MomAsksAboutGreg {"position":"7200,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Mom: Oh, nothing much sweetie. I'm just calling back to check up on Greg. He seemed like he had something important to tell me?]
+
+[[Next|MomConvoFiller]]
+
+
+:: MomConvoFiller {"position":"7325,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Finish the convo with mom here]
+
+[[Next|EscapeToTheParty]]
 
 
 :: MomFreaksOut {"position":"5400,875","size":"100,100"}
@@ -115,6 +198,13 @@ Rodrick Rules
 [[Next|phoneRowley]]
 
 
+:: MomIsCalling {"position":"6900,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick: Crap! What do we do?! EVERYONE QUIET!!]
+
+[[Next|ConversationWithMom]]
+
 
 :: MomPicksUp {"position":"5400,500","size":"100,100"}
 (enchant:?page,(bg:white))
@@ -132,6 +222,14 @@ Rodrick Rules
 [[Yes|MomHangsUp]]
 
 
+:: NoConga {"position":"8975,275","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: "Rowley, stop being embarassing! Who would want to Conga anyways? They're all too cool for that!]
+
+[[Next|RodrickScoffs]]
+
+
 :: NoGiveRodrickAdvice {"position":"2650,550","size":"100,100"}
 (enchant:?page,(bg:white))
 
@@ -143,12 +241,27 @@ Rodrick Rules
 :: NoRodrickSetUp {"position":"1800,200","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(set: $likeometer to $likeometer -1)
+(set: $likeometer to $likeometer - 1)
 
 (text-colour:black)[RODRICK HATES YOU]
 
 [[Next|GregLookingAtCloset]]
 
+
+:: NowWhat {"position":"6600,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick shoves Rowley into the basement with Greg... Greg looks to Rowley and says "so now what?"]
+
+[[Next|PhoneRings]]
+
+
+:: OnThinIce {"position":"8425,525","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick side eyes you, and his crush giggles ansd walks away ... Rodrick: "You're on thin ice buddy... but, thank you for the save"]
+
+[[Next|PartyIsDying]]
 
 
 :: ParentsLeave {"position":"800,300","size":"100,100"}
@@ -156,9 +269,25 @@ Rodrick Rules
 
 (set: $likeometer to $likeometer +1)
 
-(text-colour:black)[Mom: The house better be intact when we come back! $likeometer]
+(text-colour:black)[Mom: The house better be intact when we come back!]
 
 [[Next|DadEmphasizes]]
+
+
+:: PartyIsDying {"position":"8575,375","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick walks away and whispers something to his friends... "Guys, what do I do? This party is dying"]
+
+[[Next|RowleyHasAnIdea]]
+
+
+:: PhoneRings {"position":"6750,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick is about to shut the basement door, but then they hear the home phone ringing...]
+
+[[Next|MomIsCalling]]
 
 
 :: RatRodrickOut {"position":"5400,625","size":"100,100"}
@@ -232,12 +361,19 @@ Rodrick Rules
 [[Next|RingRowley4]]
 
 
-
 :: RingRowley4 {"position":"6000,0","size":"100,100"}
 (if: $momCalled is true) [
 	(goto: "rowleyWindow")]
 (else:) [
 	(goto: "shouldCallMom")]
+
+
+:: RodrickAndHisCrush {"position":"7975,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[You see Rodrick floundering while talking to his crush... Rowley starts to say something]
+
+[[Next|RowleyTalksAboutCrush]]
 
 
 :: RodrickGoesSike {"position":"3400,300","size":"100,100"}
@@ -252,6 +388,14 @@ Rodrick Rules
 [[Next|pushedIntoBasement]]
 
 
+:: RodrickIsAnEvilOlderBrother {"position":"6450,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick: Did you really think that you could be slick and invite your little friend over?]
+
+[[Next|NowWhat]]
+
+
 :: RodrickIsBusted {"position":"5400,1125","size":"100,100"}
 (enchant:?page,(bg:white))
 
@@ -260,12 +404,25 @@ Rodrick Rules
 [[Next|YouLose]]
 
 
-:: RodrickNoSwag {"position":"2725,125","size":"100,100"}
-enchant:?page,(bg:white))
+:: RodrickIsEmbarassed {"position":"8400,275","size":"100,100"}
+(enchant:?page,(bg:white))
 
+(text-colour:black)[Crush scoffs and walks away... Rodrick turns to you and Rowley... "YOU AND YOUR LITTLE FRIEND ARE DEAD TO ME." ]
+
+[[Next|PartyIsDying]]
+
+
+:: RodrickNoSwag {"position":"2725,125","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(set: $likeometer to $likeometer - 1)
 (text-colour:black)[Rodrick: Hey man I don't care about what you think]
 
 [[Next|grabChairs]]
+
+
+:: RodrickScoffs {"position":"9125,275","size":"100,100"}
+
 
 
 :: RodrickSmirks {"position":"1200,300","size":"100,100"}
@@ -276,7 +433,6 @@ enchant:?page,(bg:white))
 [[Next|RodrickTexts]]
 
 
-
 :: RodrickTexts {"position":"1400,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
@@ -285,13 +441,47 @@ enchant:?page,(bg:white))
 [[Next|HelpRodrickSetUpQuestion]]
 
 
+:: RodrickThreatening {"position":"7575,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick: You guys better not mess this up for me with your lame middle schooler stuff (idk)]
+
+[[Next|ExplorePartyOne]]
+
 
 :: RodrickYesSwag {"position":"2725,325","size":"100,100"}
-enchant:?page,(bg:white))
+(enchant:?page,(bg:white))
 
+(set: $likeometer to $likeometer + 1)
 (text-colour:black)[Rodrick: You know what, you make a good point little bro]
 
 [[Next|grabChairs]]
+
+
+:: RowleyEmbarassesRodrick {"position":"8250,275","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(set: $likeometer to $likeometer - 1)
+(text-colour:black)[Rowley: "-that girl he's talking to!!"]
+
+[[Next|RodrickIsEmbarassed]]
+
+
+:: RowleyHasAnIdea {"position":"8700,375","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rowley overheard this conversation and gets a crazy idea: "Hey, I know what would cheer everyone up!"]
+
+[[Next|CongaLine]]
+
+
+:: RowleyTalksAboutCrush {"position":"8100,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rowley: "Hey, I think your brother likes-"]
+
+[[Do Nothing|RowleyEmbarassesRodrick]]
+[[Stop Rowley|GregPlaysItCool]]
 
 
 :: TellOnRodrick {"position":"5400,750","size":"100,100"}
@@ -307,21 +497,21 @@ enchant:?page,(bg:white))
 
 (text-colour:black)[yes]
 
-(if: $likeometer is <1) [[Next|RodrickNoSwag]]
-(else:) [[Next|RodrickYesSwag]]
 
-
+(if: $likeometer is <1) [
+	(goto: "RodrickNoSwag")]
+(else:) [
+	(goto: "RodrickYesSwag")]
 
 
 :: YesRodrickSetUp {"position":"1800,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(set: $likeometer to $likeometer +1)
+(set: $likeometer to $likeometer + 1)
 
-(text-colour:black)[//MINI GAME//]
+(text-colour:black)[subtly show the answer to the final mini-game]
 
 [[Next|GregLookingAtCloset]]
-
 
 
 :: YouLose {"position":"5400,1250","size":"100,100"}
@@ -360,7 +550,7 @@ enchant:?page,(bg:white))
 
 (text-colour:black)[Greg: I should call Rowley and tell him to get over here]
 
-[[Next|callRowley]] 
+[[Next|callRowley]]
 
 
 :: grabChairs {"position":"3000,300","size":"100,100"}
@@ -458,9 +648,9 @@ enchant:?page,(bg:white))
 :: rowleyWindow {"position":"6200,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Greg sees Rowley through the window]
+(text-colour:black)[Greg sees Rowley through the window and says "get down here!"]
 
-[[Next|rowleyWindow]]
+[[Next|DoorOpens]]
 
 
 :: seePhone {"position":"4800,300","size":"100,100"}
