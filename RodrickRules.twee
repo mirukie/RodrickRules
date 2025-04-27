@@ -11,6 +11,16 @@ Rodrick Rules
 }
 
 
+:: AwkSauce {"position":"5400,625","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Oh. I guess this is a little awkward. Mom must love Manny the most...]
+
+(text-colour:black)[Can't say I blame her though.]
+
+[[Next|RatRodrickOut]]
+
+
 :: CongaLine {"position":"10675,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
@@ -156,7 +166,7 @@ Rodrick Rules
 [[Next|OnThinIce]]
 
 
-:: GregSnitchesPt2 {"position":"5400,1000","size":"100,100"}
+:: GregSnitchesPt2 {"position":"5375,1200","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (text-colour:black)[Greg: It's a whole houseparty! AND he locked me in the basement so I couldn't do anything. But I'm glad I found this phone to call you Mom]
@@ -164,7 +174,7 @@ Rodrick Rules
 [[Next|RodrickIsBusted]]
 
 
-:: GregStalls {"position":"5525,750","size":"100,100"}
+:: GregStalls {"position":"5500,950","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (text-colour:black)[Greg: ...]
@@ -327,7 +337,7 @@ Rodrick Rules
 [[Next|MomConvo10]]
 
 
-:: MomFreaksOut {"position":"5400,875","size":"100,100"}
+:: MomFreaksOut {"position":"5375,1075","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (text-colour:black)[Mom: What?! You can't be serious! How many people does he have over?!]
@@ -335,7 +345,7 @@ Rodrick Rules
 [[Next|GregSnitchesPt2]]
 
 
-:: MomHangsUp {"position":"5525,1000","size":"100,100"}
+:: MomHangsUp {"position":"5500,1200","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (text-colour:black)[Greg: Yeah okay Mom, sorry. Talk to you soon.]
@@ -354,12 +364,14 @@ Rodrick Rules
 :: MomPicksUp {"position":"5400,500","size":"100,100"}
 (enchant:?page,(bg:white))
 
+(text-colour:black)[The call goes through and someone picks up.]
+
 (text-colour:black)[Mom: Hey sweetie, what's the matter?]
 
-[[Next|RatRodrickOut]]
+[[Next|AwkSauce]]
 
 
-:: MomRainChecks {"position":"5525,875","size":"100,100"}
+:: MomRainChecks {"position":"5500,1075","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (text-colour:black)[Mom: Okay, well if you have nothing else to say, I'm going to get Manny ready for bed real quick. Can I call you back in a few minutes?]
@@ -370,7 +382,7 @@ Rodrick Rules
 :: NextMorning {"position":"11100,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[The birds are cheaping and the sun peaks through the windows. The boys are fast asleep.]
+(text-colour:black)[The birds are cheaping and the sun peeks through the windows. The boys are fast asleep.]
 
 [[Next|NextMorningTwo]]
 
@@ -399,9 +411,6 @@ Rodrick Rules
 (text-colour:black)[Greg: "You do the living room, l'll start the kitchen. Go!"]
 
 [[Next|NextMorningSix]]
-
-
-
 
 
 :: NextMorningFour {"position":"11475,400","size":"100,100"}
@@ -589,14 +598,17 @@ Rodrick Rules
 [[Next|ParentsAreBackTen]]
 
 
-
-
 :: ParentsAreBackSeven {"position":"13600,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (text-colour:black)[Rodrick: "Yeah, actually. You know, l never thought l'd admit this, but we had a pretty good time together."]
 
 (text-colour:black)[INDICATE SARCASTIC OR NOT WITH LIKEOMETER]
+
+(if: $likeometer is 5) [
+	(text-colour:black)[Rodrick: "I really appreciate you little bro. I guess you're kinda cool after all."]]
+(else:) [
+	(text-colour:black)[Rodrick scoffs and rolls his eyes. He definitely said that as a joke...]]
 
 [[Next|ParentsAreBackEight]]
 
@@ -648,7 +660,7 @@ Rodrick Rules
 :: PartyIsDying {"position":"10425,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Rodrick walks away and talks something to his friends"]
+(text-colour:black)[Rodrick walks away and talks something to his friends]
 
 [[Next|PartyIsDyingTwo]]
 
@@ -679,7 +691,7 @@ Rodrick Rules
 [[Next|MomIsCalling]]
 
 
-:: RatRodrickOut {"position":"5400,625","size":"100,100"}
+:: RatRodrickOut {"position":"5400,750","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (text-colour:black)[Greg: Oh, nothing much, it's just...]
@@ -787,7 +799,7 @@ Rodrick Rules
 [[Next|NowWhat]]
 
 
-:: RodrickIsBusted {"position":"5400,1125","size":"100,100"}
+:: RodrickIsBusted {"position":"5375,1325","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (text-colour:black)[Mom: Don't worry Greg, we're on our way right now.]
@@ -918,7 +930,7 @@ Rodrick Rules
 [[Stop Rowley|GregPlaysItCool]]
 
 
-:: TellOnRodrick {"position":"5400,750","size":"100,100"}
+:: TellOnRodrick {"position":"5375,950","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (text-colour:black)[Greg: Actually, I needed to let you know that Rodrick has people over]
@@ -949,7 +961,7 @@ Rodrick Rules
 [[Next|GregLookingAtCloset]]
 
 
-:: YouLose {"position":"5400,1250","size":"100,100"}
+:: YouLose {"position":"5375,1450","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (text-colour:black)[womp womp snitches get stitches. u suck for that!]
@@ -957,14 +969,45 @@ Rodrick Rules
 [[Replay?|Launch]]
 
 
-:: callMom {"position":"5200,400","size":"100,100"}
+:: callMom1 {"position":"5200,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (set: $momCalled to true)
 
-(text-colour:black)[Guess the number minigame will go here]
+(text-colour:black)[Greg: Okay, so Mom's number is 908-45... Uh...]
 
-[[Next|MomPicksUp]]
+[[Next|callMom2]]
+
+
+:: callMom2 {"position":"5200,525","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: Crap. What's the rest of her number again??]
+
+[[Next|callMom3]]
+
+
+:: callMom3 {"position":"5200,650","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: Wait a second. "45" spells "IL." Could that stand for something? Maybe "I love..." something...]
+
+(text-colour:black)[Greg: "Dad" only has three letters, so it definitely can't be that. What about everyone else's names?]
+
+[[Next|callMom4]]
+
+
+:: callMom4 {"position":"5200,775","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Who else might Greg's Mom love?]
+
+(text-colour:black)[You should try one of her son's names...]
+
+[[Rodrick|wrongNumber1]]
+[[Greg|wrongNumber2]]
+[[Manny|rightNumber]]
+
 
 
 :: callRowley {"position":"5200,100","size":"100,100"}
@@ -976,8 +1019,8 @@ Rodrick Rules
 
 (text-colour:black)[Greg always has him on speed dial! He doesn't remember his number. He knows it's one of these though]
 
-[[908 - 202 - 569|RingRowley]]
-[[908 - 202 - 598|RingPatty]]
+[[908 - 202 - 5569|RingRowley]]
+[[908 - 202 - 5598|RingPatty]]
 
 
 :: callRowleyBuffer {"position":"5750,1050","size":"100,100"}
@@ -1013,7 +1056,7 @@ Rodrick Rules
 [[Next|seePhone]]
 
 
-:: phoneRowley {"position":"5525,1125","size":"100,100"}
+:: phoneRowley {"position":"5500,1325","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (text-colour:black)[Greg: Man, I can't believe I blanked there. Oh well]
@@ -1036,6 +1079,24 @@ Rodrick Rules
 [[Right|wrongWayBeam]]
 [[Forward|rightWay]]
 [[Left|wrongWayChair]]]
+
+
+:: rightNumber {"position":"5250,1000","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg starts punching in the numbers.]
+
+(text-colour:black)[...908 - 456 - 2559...]
+
+[[Next|rightNumberCont]]
+
+
+:: rightNumberCont {"position":"5250,1125","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[The phone starts dialing. Maybe this is it!]
+
+[[Next|MomPicksUp]]
 
 
 :: rightWay {"position":"3800,400","size":"100,100"}
@@ -1077,7 +1138,7 @@ Rodrick Rules
 (text-colour:black)[Who should Greg call first?]
 
 [[Call Rowley|callRowley]]
-[[Call Mom|callMom]]
+[[Call Mom|callMom1]]
 
 
 :: rowleyWindow {"position":"6200,400","size":"100,100"}
@@ -1103,7 +1164,47 @@ Rodrick Rules
 
 (text-colour:black)[Greg decides to call his mom in the mean time. (call mom buffer)]
 
-[[Call Mom|callMom]]
+[[Call Mom|callMom1]]
+
+
+:: wrongNumber1 {"position":"4950,875","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg starts punching in the numbers.]
+
+(text-colour:black)[...908 - 457 - 6374...]
+
+[[Next|wrongNumber1Cont]]
+
+
+:: wrongNumber1Cont {"position":"4950,1000","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: Wait a minute. I didn't finish typing and it's already dialing?? There are too many letters!]
+
+(text-colour:black)[Greg: Haha, that serves him right. I'll hang up and try again.]
+
+[[Next|callMom4]]
+
+
+:: wrongNumber2 {"position":"5100,1000","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg starts punching in the numbers.]
+
+(text-colour:black)[...908 - 454 - 734...]
+
+[[Next|wrongNumber2Cont]]
+
+
+:: wrongNumber2Cont {"position":"5100,1125","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: Oh. That's definitely not enough numbers...]
+
+(text-colour:black)[Greg: Welp! Gotta hang up and try again I guess.]
+
+[[Next|callMom4]]
 
 
 :: wrongWayBeam {"position":"3800,200","size":"100,100"}
