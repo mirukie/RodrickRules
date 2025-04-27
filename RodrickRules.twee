@@ -1244,6 +1244,10 @@ Rodrick Rules
 
 
 :: StoryStylesheet [stylesheet]
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
 tw-passage {
-    font-family: Chalkduster;
+    font-family: Schoolbell;
+    font-weight: 400;
+    font-style: normal;
 }
