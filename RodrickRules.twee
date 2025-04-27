@@ -212,7 +212,7 @@ Rodrick Rules
 
 [[Next|ParentsLeave]]
 
-<img src="/Users/nayonikabanerjee/Documents/Twine/Stories/rowley.gif">
+<img src="/Users/nayonikabanerjee/Documents/RodrickRules/rowley.gif">
 
 
 :: MomAsksAboutGreg {"position":"7200,400","size":"100,100"}
@@ -382,7 +382,9 @@ Rodrick Rules
 :: NextMorning {"position":"11100,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[The birds are cheaping and the sun peeks through the windows. The boys are fast asleep.]
+(dialog: "The next morning")
+
+(text-colour:black)[The birds are chirping and the sun peeks through the windows. The boys are fast asleep.]
 
 [[Next|NextMorningTwo]]
 
@@ -408,7 +410,7 @@ Rodrick Rules
 :: NextMorningFive {"position":"11600,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Greg: "You do the living room, l'll start the kitchen. Go!"]
+(text-colour:black)[Greg: "You do the living room, l'll start on the kitchen. Go!"]
 
 [[Next|NextMorningSix]]
 
@@ -482,7 +484,7 @@ Rodrick Rules
 
 (text-colour:black)[They both go into the basement to get the spare door.]
 
-(text-colour:black)[Rodrick: "See? lt's a good thing l locked you down here. Now let's go!"]
+(text-colour:black)[Rodrick: "See? lt's a good thing l locked you down here!"]
 
 [[Next|NextMorningThirteen]]
 
@@ -494,7 +496,7 @@ Rodrick Rules
 
 (text-colour:black)[Hi. You've reached the Heffley residence. Please leave a message.]
 
-(text-colour:black)[Mom: "Hey, guys. Manny's sick. We're on our way home. See you in an hour."]
+(text-colour:black)[Mom: "Hey, guys. Manny's sick so we're on our way home. See you in an hour."]
 
 [[Next|NextMorningThree]]
 
@@ -616,7 +618,7 @@ Rodrick Rules
 :: ParentsAreBackSix {"position":"13475,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Dad: "Yeah, yeah. Good boy. So, you guys just hung out? Had a good time together, huh?"]
+(text-colour:black)[Dad: "Yeah, yeah. So, you guys just hung out? Had a good time together, huh?"]
 
 [[Next|ParentsAreBackSeven]]
 
@@ -632,7 +634,7 @@ Rodrick Rules
 :: ParentsAreBackThree {"position":"13100,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Mom: "Yeah. He's doing okay. Wow. The house looks pretty good. l was expecting a big mess. Who ate pretzels on the rug?"]
+(text-colour:black)[Mom: "Yeah. He's doing okay. Wow. The house looks pretty good. l was expecting a big mess. Who ate chips on the rug?"]
 
 (text-colour:black)[The boys chuckle nervously.]
 
@@ -678,7 +680,7 @@ Rodrick Rules
 :: PartyIsDyingTwo {"position":"10450,525","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Rodrick's Friend: "Dude, this party is dying. Look, the girls aren't into it. Look, they want to dance. You don't ask them to dance, they're gonna leave, then you're just gonna be that guy who threw the lame party with no girls. Go ask the girl to dance!"]
+(text-colour:black)[Rodrick's Friend: "Dude, this party is dying. Look, the girls aren't into it. If you don't ask them to dance, they're gonna leave, then you're just gonna be that guy who threw that lame party in highschool with no girls! Go ask them bruh."]
 
 [[Next|PartyIsDyingThree]]
 
@@ -794,7 +796,7 @@ Rodrick Rules
 :: RodrickIsAnEvilOlderBrother {"position":"6450,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Rodrick: "lt's a really nice try, Greggy. But whatever you thought, l already thinked it."]
+(text-colour:black)[Rodrick: "lt's a really nice try, Greggy. But whatever you thought, l already thought it."]
 
 [[Next|NowWhat]]
 
