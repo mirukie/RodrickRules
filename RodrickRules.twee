@@ -25,7 +25,7 @@ Rodrick Rules
 
 (dialog: "Answer the phone.")
 
-(text-colour:black)[Rodrick: *nervously* haha hey Mom! What's up?]
+(text-colour:black)[Rodrick: (//nervously//) Haha hey Mom! What's up?]
 
 [[Next|MomAsksAboutGreg]]
 
@@ -33,7 +33,7 @@ Rodrick Rules
 :: DadEmphasizes {"position":"1000,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Dad: DO NOT HAVE ANYONE OVER]
+(text-colour:black)[Dad: "DO NOT HAVE ANYONE OVER"]
 
 [[Next|RodrickSmirks]]
 
@@ -41,7 +41,7 @@ Rodrick Rules
 :: DoorOpens {"position":"6325,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Rowley is in the doorway... but Rodrick is grabbing his arm]
+(text-colour:black)[Soon Rowley is in the doorway... but Rodrick is grabbing his arm]
 
 [[Next|RodrickIsAnEvilOlderBrother]]
 
@@ -60,33 +60,63 @@ Rodrick Rules
 (enchant:?page,(bg:white))
 
 ((set: $likeometer to $likeometer + 1)
-(text-colour:black)[Greg joins and Rodrick's crush does too. Rodrick is pleasantly surprised!]
+
+(text-colour:black)[Everyone loves the conga line! Greg joins and Rodrick's crush does too. Rodrick is pleasantly surprised and sneaks in behind her. Good idea little bro.]
 
 [[Next|GoodJob]]
 
 
-:: ExplorePartyOne {"position":"9600,400","size":"100,100"}
+:: ExplorePartyFive {"position":"9750,650","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Thing 1 from the party to highlight (whipped cream)]
+(text-colour:black)[Greg: "Teenage things. Just follow my lead, and we'll be fine."]
+
+[[Next|RodrickAndHisCrush]]
+
+
+:: ExplorePartyFour {"position":"9750,525","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rowley: "Like what?"]
+
+[[Next|ExplorePartyFive]]
+
+
+:: ExplorePartyOne {"position":"9550,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[The boys walk around the party and see a kid sitting on top of the fridge eating whipped cream straight from the can.]
+
+(text-colour:black)[Greg: "Woahhh I didn't even know you could get up there."]
+
+(text-colour:black)[Greg opens his mouth and gets a hit of the whipped cream. Living the dream highschool life.]
+
 
 [[Next|ExplorePartyTwo]]
 
 
-:: ExplorePartyTwo {"position":"9725,400","size":"100,100"}
+:: ExplorePartyThree {"position":"9750,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Thing 2 from the party to highlight (seeing ppl idk)]
+(text-colour:black)[Greg: "Are you kidding me? We might not get to go to another high school party for five more years. We have an opportunity here, to see things no other kid in our grade has ever seen before."]
 
-[[Next|RodrickAndHisCrush]]
+[[Next|ExplorePartyFour]]
+
+
+:: ExplorePartyTwo {"position":"9650,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rowley: "I think we should go upstairs"]
+
+[[Next|ExplorePartyThree]]
 
 
 :: FirstGuest {"position":"3200,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[//RING RING//]
+(dialog: "//RING RING//")
 
-(text-colour:black)[The doorbell rings.]
+(text-colour:black)[The doorbell rings. The first guests have arrived.]
 
 [[Next|RodrickGoesSike]]
 
@@ -101,22 +131,27 @@ Rodrick Rules
 
 
 :: GoodJob {"position":"10975,525","size":"100,100"}
+(enchant:?page,(bg:white))
 
+(text-colour:black)[The party continues with the conga line until eventually people clear out. The Heffley residence will forever be known for this amazing party.]
+
+[[Next|NextMorning]]
 
 
 :: GregLookingAtCloset {"position":"2000,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Greg is looking at his closet]
+(text-colour:black)[Greg starts getting ready and while looking at his closet he realizes he needs to steal something from Rodrick to wear and fit in. But once he gets to his brother's closet... it's even worse.]
 
 [[Next|Idea]]
 
 
-:: GregPlaysItCool {"position":"10150,550","size":"100,100"}
+:: GregPlaysItCool {"position":"10175,550","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (set: $likeometer to $likeometer + 1)
-(text-colour:black)[Greg: "-hosting super cool parties?? Ummm yeah, duh!"]
+
+(text-colour:black)[Greg: "uhhhh -hosting super cool parties?? Ummm yeah, duh! Shut up Rowley don't ruin this for my brother."]
 
 [[Next|OnThinIce]]
 
@@ -140,7 +175,7 @@ Rodrick Rules
 :: HelpRodrickSetUpQuestion {"position":"1600,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Are you going to help Rodrick or not?]
+(text-colour:black)[Are you going to help Rodrick set up or not?]
 
 [[Yes|YesRodrickSetUp]]
 [[No|NoRodrickSetUp]]
@@ -173,7 +208,7 @@ Rodrick Rules
 :: MomAsksAboutGreg {"position":"7200,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Mom: Rodrick, it's Mom. ls everything okay? lt took a long time for you to answer. I'm just calling back to check up on Greg. He seemed like he had something to tell me. How are you?]
+(text-colour:black)[Mom: "Rodrick, it's Mom. ls everything okay? lt took a long time for you to answer. I'm just calling back to check up on Greg. He seemed like he had something to tell me. How are you?"]
 
 [[Next|MomConvo1]]
 
@@ -199,7 +234,7 @@ Rodrick Rules
 
 (text-colour:black)[Mom: "(//whispers to Frank//)" l think they're trying to get along.]
 
-(text-colour:black)[Mom: "Huh? That's good. Good, honey."]
+(text-colour:black)[Dad: "Huh? That's good. Good, honey."]
 
 [[Next|MomConvo12]]
 
@@ -255,7 +290,7 @@ Rodrick Rules
 :: MomConvo5 {"position":"7825,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Rodrick: Greg? Oh, uh. . . He can't. He's asleep. l don't want to wake him."]
+(text-colour:black)[Rodrick: "Greg? Oh, uh. . . He can't. He's asleep. l don't want to wake him."]
 
 [[Next|MomConvo6]]
 
@@ -311,7 +346,7 @@ Rodrick Rules
 :: MomIsCalling {"position":"6900,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Rodrick: "You, don't touch that phone! Music off! lf anyone makes a sound, the party is over and l am a dead man. So. . . Shh!"] 
+(text-colour:black)[Rodrick: "Music off! lf anyone makes a sound, the party is over and l am a dead man. So. . . Shh!"] 
 
 [[Next|ConversationWithMom]]
 
@@ -330,6 +365,129 @@ Rodrick Rules
 (text-colour:black)[Mom: Okay, well if you have nothing else to say, I'm going to get Manny ready for bed real quick. Can I call you back in a few minutes?]
 
 [[Yes|MomHangsUp]]
+
+
+:: NextMorning {"position":"11100,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[The birds are cheaping and the sun peaks through the windows. The boys are fast asleep.]
+
+[[Next|NextMorningTwo]]
+
+
+:: NextMorningEight {"position":"11975,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[The house is nearly clean but they notice someone wrote on the bathroom door "RODRICK RULES"]
+
+[[Next|NextMorningNine]]
+
+
+:: NextMorningEleven {"position":"12350,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg remembers when he was in the basement he ran into a door... a perfect white door just like in the bathroom!"]
+
+(text-colour:black)[Greg: "Got it!"]
+
+[[Next|NextMorningTwelve]]
+
+
+:: NextMorningFive {"position":"11600,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: "You do the living room, l'll start the kitchen. Go!"]
+
+[[Next|NextMorningSix]]
+
+
+
+
+
+:: NextMorningFour {"position":"11475,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick: "Me? You lied to Mom, just as much as l did. You know how she feels about lying! She's gonna kill both of us!"]
+
+[[Next|NextMorningFive]]
+
+
+:: NextMorningFourteen {"position":"12725,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg looks back at the door and realizes... it has no lock. They are so dead.]
+
+[[Next|ParentsAreBack]]
+
+
+:: NextMorningNine {"position":"12100,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: "Maybe we can paint over it?"]
+
+[[Next|NextMorningTen]]
+
+
+:: NextMorningSeven {"position":"11850,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg tries to find the last chair in the living room and he can't! He looks outside and sees it on the lawn. Before he can get to it, the sprinkler turns on and he jumps to save the chair from getting wet. When he lands, the newspaper boy delivers the paper with a section written by his mother all about her responsible boys. If only she knew...]
+
+[[Next|NextMorningEight]]
+
+
+:: NextMorningSix {"position":"11725,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[The boys are cleaning quick. There are red solo cups all around the house, chips all on the floor and drinks spilled everywhere. Who knows how they will pull this off.]
+
+[[Next|NextMorningSeven]]
+
+
+:: NextMorningTen {"position":"12225,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick: "l don't know how to make paint!"]
+
+[[Next|NextMorningEleven]]
+
+
+:: NextMorningThirteen {"position":"12600,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[The boys hustle to screw the door in as their parents pull up into the driveway. They get it secured and run to the living room. They notice it's too clean and throw some chips on the floor to make it feel realistic.]
+
+[[Next|NextMorningFourteen]]
+
+
+:: NextMorningThree {"position":"11350,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg: "HOLY MOLY. YOU ARE IN SO MUCH TROUBLE!"]
+
+[[Next|NextMorningFour]]
+
+
+:: NextMorningTwelve {"position":"12475,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[They both go into the basement to get the spare door.]
+
+(text-colour:black)[Rodrick: "See? lt's a good thing l locked you down here. Now let's go!"]
+
+[[Next|NextMorningThirteen]]
+
+
+:: NextMorningTwo {"position":"11225,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(dialog: "//The phone rings again//")
+
+(text-colour:black)[Hi. You've reached the Heffley residence. Please leave a message.]
+
+(text-colour:black)[Mom: "Hey, guys. Manny's sick. We're on our way home. See you in an hour."]
+
+[[Next|NextMorningThree]]
 
 
 :: NoConga {"position":"10825,300","size":"100,100"}
@@ -353,7 +511,7 @@ Rodrick Rules
 
 (set: $likeometer to $likeometer - 1)
 
-(text-colour:black)[RODRICK HATES YOU]
+(text-colour:black)[Ooooh he's gonna make you pay for that later.]
 
 [[Next|GregLookingAtCloset]]
 
@@ -374,9 +532,107 @@ Rodrick Rules
 :: OnThinIce {"position":"10325,550","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Rodrick side eyes you, and his crush giggles ansd walks away ... Rodrick: "You're on thin ice buddy... but, thank you for the save"]
+(text-colour:black)[Rodrick side eyes you, and his crush giggles and walks away]
+
+(text-colour:black)[Rodrick: "You're on thin ice buddy... but, thank you for the save"]
 
 [[Next|PartyIsDying]]
+
+
+:: ParentsAreBack {"position":"12850,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Dad: Hey guys!]
+
+[[Next|ParentsAreBackTwo]]
+
+
+:: ParentsAreBackEight {"position":"13750,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Mom: "Really? Yeah. Surprised me, too. So you just worked it all out by yourselves?"]
+
+[[Next|ParentsAreBackNine]]
+
+
+:: ParentsAreBackEleven {"position":"14175,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Their dad is wondering slowly around the house looking for any flaws that could disprove what the boys are saying. He notices one of his civil war figurines on the thermostat and yells at them but chalks it up to boys being boys.]
+
+(text-colour:black)[They just have to keep them away from the bathroom door for the next ten years until they move out...]
+
+[[Next|ParentsAreBackEleven]]
+
+
+:: ParentsAreBackFive {"position":"13350,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick: (//laughing//) "What? Nobody. You said nobody, Dad. No means no, right?"]
+
+[[Next|ParentsAreBackSix]]
+
+
+:: ParentsAreBackFour {"position":"13225,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Dad: "So. . . Who came over this weekend?"]
+
+[[Next|ParentsAreBackFive]]
+
+
+:: ParentsAreBackNine {"position":"13900,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick: "Yeah, l guess. l don't know. Mom, don't make a big deal about it. Please, just..."]
+
+[[Next|ParentsAreBackTen]]
+
+
+
+
+:: ParentsAreBackSeven {"position":"13600,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick: "Yeah, actually. You know, l never thought l'd admit this, but we had a pretty good time together."]
+
+(text-colour:black)[INDICATE SARCASTIC OR NOT WITH LIKEOMETER]
+
+[[Next|ParentsAreBackEight]]
+
+
+:: ParentsAreBackSix {"position":"13475,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Dad: "Yeah, yeah. Good boy. So, you guys just hung out? Had a good time together, huh?"]
+
+[[Next|ParentsAreBackSeven]]
+
+
+:: ParentsAreBackTen {"position":"14025,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Mom: "Okay. Okay. But nothing. . . Nothing makes me happier than to see you two being friends."]
+
+[[Next|ParentsAreBackEleven]]
+
+
+:: ParentsAreBackThree {"position":"13100,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Mom: "Yeah. He's doing okay. Wow. The house looks pretty good. l was expecting a real mess. Who ate pretzels on the rug?"]
+
+(text-colour:black)[The boys chuckle nervously.]
+
+[[Next|ParentsAreBackFour]]
+
+
+:: ParentsAreBackTwo {"position":"12975,400","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick: Hey, Mom, Dad. Hey, how's Manny? ls he feeling better? Poor little guy."]
+
+[[Next|ParentsAreBackThree]]
 
 
 :: ParentsLeave {"position":"800,300","size":"100,100"}
@@ -384,7 +640,7 @@ Rodrick Rules
 
 (set: $likeometer to $likeometer +1)
 
-(text-colour:black)[Mom: The house better be intact when we come back!]
+(text-colour:black)[Mom: "The house better be intact when we come back!"]
 
 [[Next|DadEmphasizes]]
 
@@ -392,9 +648,27 @@ Rodrick Rules
 :: PartyIsDying {"position":"10425,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Rodrick walks away and whispers something to his friends... "Guys, what do I do? This party is dying"]
+(text-colour:black)[Rodrick walks away and talks something to his friends"]
+
+[[Next|PartyIsDyingTwo]]
+
+
+:: PartyIsDyingThree {"position":"10550,650","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick: "You ask them! You've seen how I dance. If anyone should ask it should be y-"]
+
+(text-colour:black)[Their conversation is interupted by Rowley.]
 
 [[Next|RowleyHasAnIdea]]
+
+
+:: PartyIsDyingTwo {"position":"10450,525","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick's Friend: "Dude, this party is dying. Look, the girls aren't into it. Look, they want to dance. You don't ask them to dance, they're gonna leave, then you're just gonna be that guy who threw the lame party with no girls. Go ask the girl to dance!"]
+
+[[Next|PartyIsDyingThree]]
 
 
 :: PhoneRings {"position":"6750,400","size":"100,100"}
@@ -483,12 +757,12 @@ Rodrick Rules
 	(goto: "shouldCallMom")]
 
 
-:: RodrickAndHisCrush {"position":"9875,400","size":"100,100"}
+:: RodrickAndHisCrush {"position":"9900,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[You see Rodrick floundering while talking to his crush... Rowley starts to say something]
+(text-colour:black)[Greg walks into the kitchen and sees Rodrick floundering while talking to his crush.]
 
-[[Next|RowleyTalksAboutCrush]]
+[[Next|RodrickTalksAboutCrushTwo]]
 
 
 :: RodrickGoesSike {"position":"3400,300","size":"100,100"}
@@ -500,13 +774,15 @@ Rodrick Rules
 
 (text-colour:white)[Door is shut.]
 
+(text-colour:white)["There will be no middle schooler at my party. Sorry little bro."]
+
 [[Next|pushedIntoBasement]]
 
 
 :: RodrickIsAnEvilOlderBrother {"position":"6450,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Rodrick: lt's a really nice try, Greggy. But whatever you thought, l already thinked it.]
+(text-colour:black)[Rodrick: "lt's a really nice try, Greggy. But whatever you thought, l already thinked it."]
 
 [[Next|NowWhat]]
 
@@ -519,10 +795,10 @@ Rodrick Rules
 [[Next|YouLose]]
 
 
-:: RodrickIsEmbarassed {"position":"10300,300","size":"100,100"}
+:: RodrickIsEmbarassed {"position":"10325,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Crush scoffs and walks away... Rodrick turns to you and Rowley... "YOU AND YOUR LITTLE FRIEND ARE DEAD TO ME." ]
+(text-colour:black)[Rodrick turns to you and Rowley: //(angry)// "Reminder! You can't call if you're dead!"]
 
 [[Next|PartyIsDying]]
 
@@ -532,13 +808,19 @@ Rodrick Rules
 
 (set: $likeometer to $likeometer - 1)
 
-(text-colour:black)[Rodrick: Hey man I don't care about what you think]
+(text-colour:black)[Rodrick: "Little bro it's pathetic you thought I would care about what you think"]
 
 [[Next|grabChairs]]
 
 
 :: RodrickScoffs {"position":"10975,300","size":"100,100"}
+(enchant:?page,(bg:white))
 
+(text-colour:black)[Rowley: "Fineee."]
+
+(text-colour:black)[The music dies down and the girls leave without dancing. Bad idea little bro]
+
+[[Next|NextMorning]]
 
 
 :: RodrickSmirks {"position":"1200,300","size":"100,100"}
@@ -549,10 +831,26 @@ Rodrick Rules
 [[Next|RodrickTexts]]
 
 
+:: RodrickTalksAboutCrushThree {"position":"9925,675","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Greg hears Rowley about to say something.]
+
+[[Next|RowleyTalksAboutCrush]]
+
+
+:: RodrickTalksAboutCrushTwo {"position":"9925,550","size":"100,100"}
+(enchant:?page,(bg:white))
+
+(text-colour:black)[Rodrick to his crush: "You should hear my band. We play so loud, we actually make people's eardrums bleed. Ew. l mean, not really.// (nervous laughter)//"]
+
+[[Next|RodrickTalksAboutCrushThree]]
+
+
 :: RodrickTexts {"position":"1400,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Rodrick texts all of his friends]
+(text-colour:black)[Rodrick plops down on the couch and texts all of his friends that there is a party at his tonight.]
 
 [[Next|HelpRodrickSetUpQuestion]]
 
@@ -573,7 +871,7 @@ Rodrick Rules
 [[Next|RodrickThreatening3]]
 
 
-:: RodrickThreatening3 {"position":"9475,400","size":"100,100"}
+:: RodrickThreatening3 {"position":"9450,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (text-colour:black)[Rodrick: "Just stay out of my way, nerds."]
@@ -585,16 +883,20 @@ Rodrick Rules
 (enchant:?page,(bg:white))
 
 (set: $likeometer to $likeometer + 1)
-(text-colour:black)[Rodrick: You know what, you make a good point little bro]
+
+(text-colour:black)[Rodrick: "You know what, you make a good point little bro. I'll stick with my band out fit. Chicks dig that."]
 
 [[Next|grabChairs]]
 
 
-:: RowleyEmbarassesRodrick {"position":"10150,300","size":"100,100"}
+:: RowleyEmbarassesRodrick {"position":"10175,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (set: $likeometer to $likeometer - 1)
-(text-colour:black)[Rowley: "-that girl he's talking to!!"]
+
+(text-colour:black)[Rowley: "-her!!"]
+
+(text-colour:black)[The party goes silent and everyone hears. The girl walks away.]
 
 [[Next|RodrickIsEmbarassed]]
 
@@ -602,12 +904,12 @@ Rodrick Rules
 :: RowleyHasAnIdea {"position":"10550,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Rowley overheard this conversation and gets a crazy idea: "Hey, I know what would cheer everyone up!"]
+(text-colour:black)[Rowley: "Did somebody say "dance"? Break it down!"]
 
 [[Next|CongaLine]]
 
 
-:: RowleyTalksAboutCrush {"position":"10000,400","size":"100,100"}
+:: RowleyTalksAboutCrush {"position":"10025,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
 (text-colour:black)[Rowley: "Hey, I think your brother likes-"]
@@ -629,7 +931,6 @@ Rodrick Rules
 
 (text-colour:black)[yes]
 
-
 (if: $likeometer is <1) [
 	(goto: "RodrickNoSwag")]
 (else:) [
@@ -640,6 +941,8 @@ Rodrick Rules
 (enchant:?page,(bg:white))
 
 (set: $likeometer to $likeometer + 1)
+
+(text-colour:black)[Aww the brothers are bonding! Granted for a mischevious cause but that's where the best bonding happens.]
 
 (text-colour:black)[subtly show the answer to the final mini-game]
 
@@ -688,7 +991,7 @@ Rodrick Rules
 :: grabChairs {"position":"3000,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Greg goes to grab chairs from the basement]
+(text-colour:black)[It's almost time for the party. Greg goes to grab extra chairs from the basement.]
 
 [[Next|FirstGuest]]
 
@@ -780,7 +1083,9 @@ Rodrick Rules
 :: rowleyWindow {"position":"6200,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Greg sees Rowley through the window and says "get down here!"]
+(text-colour:black)[Greg sees Rowley through the window. and says "get down here!"]
+
+(text-colour:black)[Greg: "Get down here!"]
 
 [[Next|DoorOpens]]
 
