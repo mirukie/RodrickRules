@@ -35,7 +35,7 @@ Rodrick Rules
 
 (dialog: "Answer the phone.")
 
-(text-colour:black)[Rodrick: (//nervously//) Haha hey Mom! What's up?]
+(text-colour:black)[Rodrick: (//nervously//) "Haha hey Mom! What's up?"]
 
 [[Next|MomAsksAboutGreg]]
 
@@ -81,7 +81,7 @@ Rodrick Rules
 :: ExplorePartyFive {"position":"9750,650","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Greg: "Teenage things. Just follow my lead, and we'll be fine."]
+(text-colour:black)[Greg: "//Teenage// things. Just follow my lead."]
 
 [[Next|RodrickAndHisCrush]]
 
@@ -110,7 +110,7 @@ Rodrick Rules
 :: ExplorePartyThree {"position":"9750,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Greg: "Are you kidding me? We might not get to go to another high school party for five more years. We have an opportunity here, to see things no other kid in middle school has ever seen."]
+(text-colour:black)[Greg: "Are you kidding me? We might not get to go to another high school party for years. We have a chance here, to see things no other kid in middle school has ever seen."]
 
 [[Next|ExplorePartyFour]]
 
@@ -128,7 +128,6 @@ Rodrick Rules
 	(go-to: "ParentsAreBackSix")]
 (else:) [
 	(go-to:"ParentsFindOut")]
-   
 
 
 :: FinalMinigame1 {"position":"12725,525","size":"100,100"}
@@ -256,7 +255,7 @@ Rodrick Rules
 :: MomAsksAboutGreg {"position":"7200,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Mom: "Rodrick, it's Mom. ls everything okay? lt took a long time for you to answer. I'm just calling back to check up on Greg. He seemed like he had something to tell me. How are you?"]
+(text-colour:black)[Mom: "Rodrick, it's Mom. ls everything okay? lt took you a while to answer. I'm just calling back to check up on Greg. He seemed like he had something to tell me. How are you?"]
 
 [[Next|MomConvo1]]
 
@@ -264,7 +263,7 @@ Rodrick Rules
 :: MomConvo1 {"position":"7325,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Rodrick: "Yeah, everything's fine. l was just washing dishes."]
+(text-colour:black)[Rodrick: "Yeah, everything's great Mom. l was just washing dishes."]
 
 [[Next|MomConvo2]]
 
@@ -280,7 +279,7 @@ Rodrick Rules
 :: MomConvo11 {"position":"8575,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Mom: "(//whispers to Dad//)" l think they're trying to get along.]
+(text-colour:black)[Mom: (//whispers to Dad//) "l think they're trying to get along."]
 
 (text-colour:black)[Dad: "Huh? That's great. Good, honey."]
 
@@ -322,7 +321,7 @@ Rodrick Rules
 :: MomConvo3 {"position":"7575,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Rodrick: "No problem. Bye."]
+(text-colour:black)[Rodrick: "No problem. Bye Mom."]
 
 [[Next|MomConvo4]]
 
@@ -354,7 +353,7 @@ Rodrick Rules
 :: MomConvo7 {"position":"8075,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Mom: "Hi, sweetie, is everything okay? Why were you asleep so early? I can never get you to bed on time"]
+(text-colour:black)[Mom: "Hi, sweetie, is everything okay? Why were you asleep so early? I can never get you to bed on time when I'm home."]
 
 [[Next|MomConvo8]]
 
@@ -419,8 +418,6 @@ Rodrick Rules
 [[Yes|MomHangsUp]]
 
 
-
-
 :: NextMorning {"position":"11100,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
@@ -476,7 +473,7 @@ Rodrick Rules
 :: NextMorningNine {"position":"12100,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Greg: "Maybe we can paint over it?"]
+(text-colour:black)[Greg: "Maybe we just paint over it? Cover it up"]
 
 [[Next|NextMorningTen]]
 
@@ -526,7 +523,7 @@ Rodrick Rules
 
 (text-colour:black)[They both go into the basement to get the spare door.]
 
-(text-colour:black)[Rodrick: "See? lt's a good thing l locked you down here!"]
+(text-colour:black)[Rodrick: "See? lt's a good thing l locked you in the basement!"]
 
 [[Next|NextMorningThirteen]]
 
@@ -546,7 +543,7 @@ Rodrick Rules
 :: NoConga {"position":"10825,300","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Greg: "Rowley, stop being embarassing! Who would want to Conga anyways? They're all too cool for that!]
+(text-colour:black)[Greg: "Rowley, stop being embarassing! Who would want to Conga anyways? They're all too cool for that!"]
 
 [[Next|RodrickScoffs]]
 
@@ -668,7 +665,7 @@ Rodrick Rules
 :: ParentsAreBackSix {"position":"13475,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Dad: "Yeah, yeah. So, you guys just hung out? Had a good time together, huh?"]
+(text-colour:black)[Dad: "Yeah, yeah. So, you guys just hung out? Had a good time?"]
 
 [[Next|ParentsAreBackSeven]]
 
@@ -676,7 +673,7 @@ Rodrick Rules
 :: ParentsAreBackTen {"position":"14025,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Mom: "Okay. Okay. But nothing. . . Nothing makes me happier than to see you two being friends."]
+(text-colour:black)[Mom: "Okay. Okay. Nothing makes me happier than to see you two being friends."]
 
 [[Next|ParentsAreBackEleven]]
 
@@ -1055,8 +1052,6 @@ Rodrick Rules
 (text-colour:black)[Aww the brothers are bonding! Granted for a mischevious cause but that's where the best bonding happens.]
 
 [[Next|SetUpHint]]
-
-
 
 
 :: YouLose {"position":"5375,1450","size":"100,100"}
