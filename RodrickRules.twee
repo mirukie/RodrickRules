@@ -1332,3 +1332,9 @@ tw-passage {
     font-weight: 400;
     font-style: normal;
 }
+
+tw-story {
+    font-family: Schoolbell;
+    font-weight: 400;
+    font-style: normal;
+}
