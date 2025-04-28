@@ -617,11 +617,9 @@ Rodrick Rules
 :: ParentsAreBackEleven {"position":"14175,400","size":"100,100"}
 (enchant:?page,(bg:white))
 
-(text-colour:black)[Their dad is wondering slowly around the house looking for any flaws that could disprove what the boys are saying. He notices one of his civil war figurines on the thermostat and yells at them but chalks it up to boys being boys.]
+(text-colour:black)[Their dad is wandering slowly around the house looking for any flaws that could disprove what the boys are saying. He notices one of his civil war figurines on the thermostat and yells at them but chalks it up to boys being boys.]
 
-(text-colour:black)[They just have to keep them away from the bathroom door for the next ten years until they move out...]
-
-[[Play Again!|Launch]]
+[[Next|Win]]
 
 
 :: ParentsAreBackFive {"position":"13350,400","size":"100,100"}
@@ -1018,6 +1016,14 @@ Rodrick Rules
 (text-colour:black)[Greg: Actually, I needed to let you know that Rodrick has people over]
 
 [[Next|MomFreaksOut]]
+
+
+:: Win {"position":"14300,400","size":"100,100"}
+(enchant:?page,(bg:green))
+
+(text-colour:black)[They just have to keep them away from the bathroom door for the next ten years until they move out...]
+
+[[Play Again!|Launch]]
 
 
 :: YesGiveRodrickAdvice {"position":"2600,200","size":"100,100"}
